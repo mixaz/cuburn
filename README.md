@@ -1,3 +1,5 @@
+Forked for usage in NVidia-docker Dockerfile
+
 # Cuburn
 
 This project is a fractal flame renderer, similar to [flam3](http://flam3.com),
