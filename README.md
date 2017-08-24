@@ -1,4 +1,4 @@
-Forked for usage in NVidia-docker - Dockerfile
+Forked for usage in NVidia-docker - added Dockerfile
 
 # Cuburn
 
