@@ -1,7 +1,7 @@
 FROM twobombs/deploy-nvidia-docker
 
 RUN git clone --recursive http://git.tiker.net/trees/pycuda.git
-RUN got clone --recursive https://github.com/twobombs/cuburn.git
+RUN git clone --recursive https://github.com/twobombs/cuburn.git
 
 RUN add-apt-repository universe
 RUN apt-get update
