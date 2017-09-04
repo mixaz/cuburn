@@ -18,4 +18,3 @@ RUN apt-get install -y libboost-all-dev python-pycuda python-pip && apt-get clea
 
 RUN pip install numpy scipy
 
-EXPOSE 5900 6080
