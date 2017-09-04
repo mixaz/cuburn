@@ -5,6 +5,8 @@ LABEL com.nvidia.volumes.needed="nvidia_driver"
 ENV PATH /usr/local/nvidia/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64:${LD_LIBRARY_PATH}
 
+RUN apt-get update&&apt-get install -y git
+
 RUN git clone --recursive http://git.tiker.net/trees/pycuda.git
 RUN git clone --recursive https://github.com/twobombs/cuburn.git
 
