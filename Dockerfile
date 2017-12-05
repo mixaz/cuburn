@@ -12,9 +12,6 @@ RUN git clone --recursive https://github.com/twobombs/cuburn.git
 
 # RUN cd /pycuda&&configure&&make&&make install
 
-RUN add-apt-repository universe
-RUN apt-get update
-RUN apt-get install -y libboost-all-dev python-pycuda python-pip && apt-get clean all
+RUN add-apt-repository universe && apt-get update && export DEBIAN_FRONTEND=noninteractive && apt-get install -y libboost-all-dev python-pycuda python-pip && apt-get clean all
 
 RUN pip install numpy scipy
-
