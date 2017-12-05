@@ -10,7 +10,7 @@ RUN apt-get update&&apt-get install -y git
 RUN git clone --recursive http://git.tiker.net/trees/pycuda.git
 RUN git clone --recursive https://github.com/twobombs/cuburn.git
 
-RUN cd /pycuda&&configure&&make&&make install
+# RUN cd /pycuda&&configure&&make&&make install
 
 RUN add-apt-repository universe
 RUN apt-get update
