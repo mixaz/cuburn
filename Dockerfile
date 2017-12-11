@@ -10,8 +10,6 @@ RUN apt-get update&&apt-get install -y git software-properties-common python-sof
 RUN git clone --recursive http://git.tiker.net/trees/pycuda.git
 RUN git clone --recursive https://github.com/stevenrobertson/cuburn.git
 
-# RUN cd /pycuda&&./configure.py&&./make&&./make install
-
 RUN add-apt-repository universe && apt-get update && export DEBIAN_FRONTEND=noninteractive && apt-get install -y libboost-all-dev python-pycuda python-pip && apt-get clean all
 
 RUN pip install numpy scipy
