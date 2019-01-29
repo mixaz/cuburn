@@ -1,9 +1,4 @@
-FROM nvidia/cuda:8.0-runtime-ubuntu16.04
-
-LABEL com.nvidia.volumes.needed="nvidia_driver"
-
-ENV PATH /usr/local/nvidia/bin:${PATH}
-ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64:${LD_LIBRARY_PATH}
+FROM twobombs/deploy-nvidia-docker
 
 RUN apt-get update&&apt-get install -y git software-properties-common python-software-properties python-setuptools python3-setuptools python-migrate && apt-get clean all
 
