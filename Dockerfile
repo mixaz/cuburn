@@ -8,4 +8,4 @@ RUN add-apt-repository universe && apt-get update && export DEBIAN_FRONTEND=noni
 RUN git clone --recursive https://github.com/stevenrobertson/cuburn.git
 RUN git clone --recursive https://github.com/mebigfatguy/apophysis-j.git
 RUN cd /apophysis-j && ant 
-RUN add-apt-repository ppa:paulo-miguel-dias/mesa -y && pip install numpy scipy
+RUN add-apt-repository ppa:paulo-miguel-dias/mesa -y && pip install numpy scipy && apt-get clean all
